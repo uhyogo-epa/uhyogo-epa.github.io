@@ -1,4 +1,4 @@
-baseURL: "https://www.example.com/"
+baseURL: "https://uhyogo-epa.github.io"
 theme: "up-business-theme-rev"
 languageCode: "ja"
 
@@ -10,7 +10,7 @@ summaryLength: 20
 
 params:
   title: "uh-epa"
-  description: "We specialize in providing services to desing websites, applications, build and maintain business for customers."
+  description: "This is the website of electric power applications laboratory in university of hyogo."
   images: 
     - "images/hero-image.png"
 
