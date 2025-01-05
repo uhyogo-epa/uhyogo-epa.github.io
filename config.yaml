@@ -21,11 +21,11 @@ params:
     backgroundColor: "#FFFFFF"
     faviconColor: "#000000"
 
-  # social:
-  #   dribbble: "#"
-  #   instagram: "#"
-  #   facebook: "#"
-  #   twitter: "#"
+  social:
+    dribbble: "#"
+    instagram: "#"
+    facebook: "#"
+    twitter: "#"
 
   location:
     - "兵庫県姫路市書写2167"
