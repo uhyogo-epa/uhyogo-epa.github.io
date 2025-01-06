@@ -21,17 +21,17 @@ params:
     backgroundColor: "#FFFFFF"
     faviconColor: "#000000"
 
-  social:
-    dribbble: "#"
-    instagram: "#"
-    facebook: "#"
-    twitter: "#"
+  # social:
+  #   dribbble: "#"
+  #   instagram: "#"
+  #   facebook: "#"
+  #   twitter: "#"
 
   location:
     - "兵庫県姫路市書写2167"
 
   contact:
-    - "hoshino@eng.u-hyogo.ac.jp"
+    - "h930h019+@+guh.u-hyogo.ac.jp"
 
   copyright: "© 2024 · Powered by Hugo & Up Business"
 
