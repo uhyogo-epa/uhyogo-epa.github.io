@@ -4,6 +4,14 @@ papers:
 
 
 conferences:
+  - author: "T. Mantani, H. Hoshino, T. Kanazawa, E. Furutani"
+    title:  "Sizing of battery considering renewable energy bidding strategy with reinforcement learning"
+    conf:   "2025 IEEE Power & Energy Society General Meeting"
+    place:  "Austin, TX, USA"
+    date:   "July 27-31"
+    year:   "2025"
+    note:   "accepted"
+ 
   - author: "岩井克樹, 星野光, 古谷栄光"
     title:  "変分方程式を用いた不均一ホライゾンIterative LQR：化学プロセスの濃度制御への適用例"
     conf:   "2024年度計測自動制御学会関西支部・システム制御情報学会シンポジウム"

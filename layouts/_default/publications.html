@@ -24,7 +24,7 @@
                   <p class="pt-2 mb-0">原著論文</p>
                   <ol class="mb-0">
                    {{ range . }} 
-                     <li> {{with .author}}{{.}}{{end}}, {{with .title}}"{{.}}", {{end}}{{with .journal}}{{.}}, {{end}}{{with .volume}}Vol. {{.}}, {{end}}{{with .number}}No. {{.}}, {{end}}{{with .pages}}pp. {{.}} {{end}} {{with .year}} ({{.}}){{end}}.{{with .remark}}<b> {{.}}</b>{{end}}
+                     <li> {{with .author}}{{.}}{{end}}, {{with .title}}"{{.}}", {{end}}{{with .journal}}{{.}}, {{end}}{{with .volume}}Vol. {{.}}, {{end}}{{with .number}}No. {{.}}, {{end}}{{with .pages}}pp. {{.}} {{end}} {{with .year}} ({{.}}){{end}}.{{with .note}} ({{.}}){{end}}{{with .remark}}<b> {{.}}</b>{{end}}
                    {{end}}
                   </ol>
               {{ end }}
@@ -32,7 +32,7 @@
                   <p class="pt-2 mb-0">研究発表</p>
                   <ol class="mb-0">
                    {{ range . }} 
-                      <li> {{ with .author}}{{.}},{{end}} {{with .title}}{{.}},{{end}} {{with .conf}}{{.}}, {{end}}{{with .pages}}pp. {{.}}, {{end}}{{with .id}}{{.}}, {{end}}{{with .place}}{{.}}, {{end}}{{with .date}}{{.}}{{end}}{{with .year}} ({{.}}){{end}}.{{with .remark}}<b> {{.}}</b>{{end}}
+                      <li> {{ with .author}}{{.}},{{end}} {{with .title}}{{.}},{{end}} {{with .conf}}{{.}}, {{end}}{{with .pages}}pp. {{.}}, {{end}}{{with .id}}{{.}}, {{end}}{{with .place}}{{.}}, {{end}}{{with .date}}{{.}}{{end}}{{with .year}} ({{.}}){{end}}.{{with .note}} ({{.}}){{end}}{{with .remark}}<b> {{.}}</b>{{end}}
                    {{end}}
                   </ol>
               {{ end }}
@@ -40,7 +40,7 @@
                   <p class="pt-2 mb-0">その他</p>
                   <ol class="mb-0">
                    {{ range . }} 
-                      <li> {{with .author}}{{.}}{{end}}, {{with .title}}"{{.}}", {{end}}{{with .journal}}{{.}}, {{end}}{{with .volume}}Vol. {{.}}, {{end}}{{with .number}}No. {{.}}, {{end}}{{with .pages}}pp. {{.}} {{end}} {{with .year}} ({{.}}){{end}}.{{with .remark}}<b> {{.}}</b>{{end}}
+                      <li> {{with .author}}{{.}}{{end}}, {{with .title}}"{{.}}", {{end}}{{with .journal}}{{.}}, {{end}}{{with .volume}}Vol. {{.}}, {{end}}{{with .number}}No. {{.}}, {{end}}{{with .pages}}pp. {{.}} {{end}} {{with .year}} ({{.}}){{end}}.{{with .note}} ({{.}}){{end}}{{with .remark}}<b> {{.}}</b>{{end}}
                    {{end}}
                   </ol>
               {{ end }}
@@ -52,10 +52,6 @@
     </div>
   </div>
 </section>
-
-
-
-
 
 
 {{ end }}
