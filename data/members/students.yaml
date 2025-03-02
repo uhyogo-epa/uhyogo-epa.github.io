@@ -1,0 +1,44 @@
+studentlist:
+  - grade: "博士後期課程"
+    items: 
+      - name:  "橋本 啓嗣"
+        ename: "Hirotsugu Hashimoto"
+
+  - grade: "修士2年生"
+    items:
+      - name: "石本 海斗"
+        ename: "Kaito Ishimoto"
+      - name: "岩井 克樹"
+        ename: "Katsuki Iwai"
+      - name: "上川 桜典"
+        ename: "Osuke Uekawa"
+      - name: "卜部 拓馬"
+        ename: "Takuma Urabe"
+      - name: "後藤 健太"
+        ename: "Kenta Goto"
+      - name: "西村 憲二郎"
+        ename: "Kenjiro Nishimura"
+      - name: "萬谷 太陽"
+        ename: "Taiyo Mantani"
+
+
+  - grade: "修士1年生"
+    items: 
+      - name:  "金澤 友生"
+        ename: "Tomonari Kanazawa"
+      - name:  "久保 勝利"
+        ename: "Shori Kubo"
+      - name:  "笹田 悠人"
+        ename: "Yuto Sasada"
+      - name:  "橋間 尚樹"
+        ename: "Naoki Hashima"
+      - name:  "向 伸太郎"
+        ename: "Shintaro Mukai"
+      - name:  "持丸 祥摩"
+        ename: "Shoma Mochimaru"
+
+
+  - grade: "学部4年生"
+    items: 
+      - name: "TBA"
+

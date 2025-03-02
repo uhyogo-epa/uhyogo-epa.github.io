@@ -1,0 +1,41 @@
+enabled: true
+id: "staffs"
+
+
+staffs:
+  - position: "教授"
+    name:  "古谷 栄光"
+    image: "images/services-web-development.png"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant condimentum sit gravida praesent. "
+    button:
+      label: "Learn more"
+      url: "#"
+
+  - positoin: "助教"
+    name: "星野 光"
+    image: "images/hoshino.png"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant condimentum sit gravida praesent. "
+    button:
+    label: "Learn more"
+    url: "#"
+
+stafflist:
+  - position: "教授"
+    items:
+      - name:  "古谷 栄光"
+        ename: "Eiko Furutani"
+        image: "images/furutani.jpg"
+        buttons: 
+          - label: "個人ページ"
+            url:   "https://www.eng.u-hyogo.ac.jp/faculty/furutani/index.html"
+ 
+  - position: "助教"
+    items:
+      - name:  "星野 光"
+        ename: "Hikaru Hoshino"
+        image: "images/hoshino.jpg"
+        buttons:
+          - label: "個人ページ"
+            url:   "https://hoshino06.github.io/ja/"
+          - label: "Github"
+            url:   "https://github.com/hoshino06/"
