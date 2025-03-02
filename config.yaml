@@ -2,7 +2,7 @@ baseURL: "https://uhyogo-epa.github.io"
 theme: "up-business-theme-rev"
 languageCode: "ja"
 
-title: "電力応用工学"
+title: "電力応用工学G"
 
 # googleAnalytics: ""
 
@@ -45,7 +45,7 @@ menus:
       url: "/members"
       weight: 3
 
-    - name: "研究業績"
+    - name: "研究成果"
       url: "/publications"
       weight: 4
 
@@ -65,7 +65,7 @@ menus:
       url: "/members"
       weight: 3
 
-    - name: "研究業績"
+    - name: "研究成果"
       url: "/publications"
       weight: 4
 

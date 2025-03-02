@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+<section class="section pt-5">
+  <div class="container">
+    <div class="row justify-content-center pb-0">
+      <div class="col-12 col-xl-6">
+          <h2 class="fs-1 fw-bold text-center text-primary pb-0">研究成果</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section pt-2">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <table class="col-10">
+        <tbody>
+          {{ range sort .Site.Data.publications "year" "desc" }}
+          <tr class="pb-2" style="border-bottom: 2px solid #ddd;">
+            <td width="80"> <b> {{.year}} </b> </td> 
+            <td width="600" class="pt-2 pb-4" style="font-size:small">
+              {{ with .papers }}
+                  <p class="pt-2 mb-0">原著論文</p>
+                  <ol class="mb-0">
+                   {{ range . }} 
+                     <li> {{with .author}}{{.}}{{end}}, {{with .title}}"{{.}}", {{end}}{{with .journal}}{{.}}, {{end}}{{with .volume}}Vol. {{.}}, {{end}}{{with .number}}No. {{.}}, {{end}}{{with .pages}}pp. {{.}} {{end}} {{with .year}} ({{.}}){{end}}.{{with .remark}}<b> {{.}}</b>{{end}}
+                   {{end}}
+                  </ol>
+              {{ end }}
+              {{ with .conferences }}
+                  <p class="pt-2 mb-0">研究発表</p>
+                  <ol class="mb-0">
+                   {{ range . }} 
+                      <li> {{ with .author}}{{.}},{{end}} {{with .title}}{{.}},{{end}} {{with .conf}}{{.}}, {{end}}{{with .pages}}pp. {{.}}, {{end}}{{with .id}}{{.}}, {{end}}{{with .place}}{{.}}, {{end}}{{with .date}}{{.}}{{end}}{{with .year}} ({{.}}){{end}}.{{with .remark}}<b> {{.}}</b>{{end}}
+                   {{end}}
+                  </ol>
+              {{ end }}
+              {{ with .misc }}
+                  <p class="pt-2 mb-0">その他</p>
+                  <ol class="mb-0">
+                   {{ range . }} 
+                      <li> {{with .author}}{{.}}{{end}}, {{with .title}}"{{.}}", {{end}}{{with .journal}}{{.}}, {{end}}{{with .volume}}Vol. {{.}}, {{end}}{{with .number}}No. {{.}}, {{end}}{{with .pages}}pp. {{.}} {{end}} {{with .year}} ({{.}}){{end}}.{{with .remark}}<b> {{.}}</b>{{end}}
+                   {{end}}
+                  </ol>
+              {{ end }}
+            </td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+{{ end }}
