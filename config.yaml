@@ -41,6 +41,11 @@ menus:
       url: "/#hero"
       weight: 1
 
+    - name: "ニュース"
+      url: "/news"
+      weight: 3
+
+
     - name: "メンバー"
       url: "/members"
       weight: 3

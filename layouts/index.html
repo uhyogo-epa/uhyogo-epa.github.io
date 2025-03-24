@@ -1,8 +1,72 @@
 {{ define "main" }}
-  {{ with .Site.Data.home.hero }}{{ partial "sections/hero.html" . }}{{ end }}
-  {{ with .Site.Data.home.brands }}{{ partial "sections/brands.html" . }}{{ end }}
-  {{ with .Site.Data.home.portfolio }}{{ partial "sections/portfolio.html" . }}{{ end }}
-  {{ with .Site.Data.home.services }}{{ partial "sections/services.html" . }}{{ end }}
-  {{ with .Site.Data.home.testimonials }}{{ partial "sections/testimonials.html" . }}{{ end }}
-  {{ with .Site.Data.home.cta }}{{ partial "sections/cta.html" . }}{{ end }}
+
+{{ with .Site.Data.toppage.firstview }}
+  {{ $imgXL := resources.Get .image | fingerprint }}
+  {{ $imgSM := resources.Get .image | fingerprint }}
+
+  <div class="fv" id="fv" 
+    data-bg-xl="{{ $imgXL.RelPermalink }}" 
+    data-bg-sm="{{ $imgSM.RelPermalink }}">
+  </div>
 {{ end }}
+
+{{ with .Site.Data.toppage.about }}
+<section class="section py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-8">
+        <h3 class="fs-1 fw-bold text-center text-primary pb-3"> About </h3>
+        <p class="text-center text-black-61 text-xl-start pb-3">{{ .content }}</p>
+      </div>
+    </div>
+
+    {{ with .group_photo }}
+    <div class="row justify-content-center py-0">
+      <div class="col-12 col-xl-8 text-center">
+        {{ $photo := resources.Get . | fingerprint }}
+        {{ $resized := $photo.Resize "800x" }}
+        <img src="{{ $resized.RelPermalink }}" alt="Group Photo" class="group-photo img-fluid">
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+{{ end }}
+
+<style>
+  .fv {
+    width: 100%;
+    height: 420px; 
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Group Photo のスタイル */
+  .group-photo {
+    border-radius: 15px; /* 角を少し丸くする */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ほんのり影をつける */
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var fv = document.getElementById("fv");
+    if (fv) {
+      var imgXL = fv.getAttribute("data-bg-xl");
+      var imgSM = fv.getAttribute("data-bg-sm");
+
+      if (window.innerWidth >= 1280) {
+        fv.style.backgroundImage = "url('" + imgXL + "')";
+      } else {
+        fv.style.backgroundImage = "url('" + imgSM + "')";
+      }
+    }
+  });
+</script>
+
+{{ end }}
+
+

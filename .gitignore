@@ -19,3 +19,4 @@ Gemfile.lock
 
 .hugo_build.lock
 
+resources/_gen/

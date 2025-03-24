@@ -40,5 +40,20 @@ studentlist:
 
   - grade: "学部4年生"
     items: 
-      - name: "TBA"
+      - name:  "内海 晃太"
+        ename: "Kota Utsumi"
+      - name:  "岸 健人"
+        ename: "Kento Kishi"
+      - name:  "杉原 雅俊"
+        ename: "Masatoshi Sugihara"
+      - name:  "田中 響誠"
+        ename: "Kyosei Tanaka"
+      - name:  "中川 喜輝"
+        ename: "Yoshiki Nakagawa"
+      - name:  "福盛 真由"
+        ename: "Mayu Fukumori"
+      - name:  "八木 玲央斗"
+        ename: "Reoto Yagi"
+      - name:  "村井 衛"
+        ename: "Mamoru Murai"
 

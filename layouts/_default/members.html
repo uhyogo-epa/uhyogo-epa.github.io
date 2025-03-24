@@ -29,12 +29,14 @@
           {{ end }}
         </div>
         <div class="col-12 col-xl-3 text-center" style="margin-left: auto;">
-          {{with .image}}
-            {{ with resources.Get .}} <img src="{{ .Permalink }}"  alt="" style="max-height: 200px; object-fit: cover; border-radius: 15px;"  > {{ end }}
+          {{ with .image }}
+            {{ with resources.Get . }} 
+              <img src="{{ .Permalink }}" alt="" class="staff-photo">
+            {{ end }}
           {{ end }}
         </div>
       </div>
-     {{ end }}
+      {{ end }}
     {{ end }}
     </div>
   </div>
@@ -54,7 +56,7 @@
       {{ range .items }}
        <div class="col-12 col-xl-12">
          <div class="text-center">
-            <h4 class="text-center text-primary pb-1"> {{.name}} {{ with .ename }} / {{ . }} {{ end }} </h4>
+            <h4 class="text-center text-primary pb-1"> {{ .name }} {{ with .ename }} / {{ . }} {{ end }} </h4>
          </div>
        </div>
       {{ end }}
@@ -65,5 +67,17 @@
 {{ end }}
 
 
+<style>
+  /* スタッフ写真 */
+  .staff-photo {
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+</style>
 
 {{ end }}
+
+
+
+
