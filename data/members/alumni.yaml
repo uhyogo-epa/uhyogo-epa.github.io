@@ -1,0 +1,20 @@
+yearlist:
+  - year: "2024年度"
+    items:
+      - name:  "澤田 朋弥"
+        grade: "修士"
+      - name:  "重松 克哉"
+        grade: "修士"
+      - name:  "宮口 大輝"
+        grade: "修士"
+      - name:  "渡部 成将 "
+        grade: "修士"
+  - year: "2023年度"
+    items:
+      - name: "森 "
+      - name: "中村 恵子"
+      - name: "大田 健太"
+  - year: "2022年度"
+    items:
+      - name: "吉田 直人"
+      - name: "山田 さくら"
