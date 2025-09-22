@@ -1,7 +1,7 @@
 +++
 layout = "single_post"
 author = "Hugo Authors"
-title  = "IEEE Power & Energy General Meeting"
+title  = "IEEE Power & Energy Society General Meeting"
 date   = "2025-07-29"
 featured_img = "IMG_4548.jpg"
 images = ["IMG_4558.jpg","IMG_4548.jpg", "IMG_4551.jpg", "IMG_4554.jpg", "IMG_4561.jpg", "IMG_4567.jpg"]
