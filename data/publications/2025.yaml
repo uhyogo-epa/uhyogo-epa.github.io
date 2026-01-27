@@ -1,14 +1,38 @@
 year: "2025"
 
 papers:
-  - author:  "H. Hoshino"
+
+  - author:  "Taiyo Mantani, Hikaru Hoshino, and Eiko Furutani"
+    title:   "Optimal battery sizing for real-time renewable energy bidding based on reinforcement learning"
+    journal: "IEEE Transactions on Energy Markets, Policy and Regulation"
+    year:    "2025"
+    note:    "in press"
+
+  - author:  "Toshihiro Takeda, Yuichi Ogino, Shino Kani, Eiko Furutani, Takehiko Asaga, and
+Gotaro Shirakami"
+    title:   "Effects of aging on the maintenance dose of remimazolam anesthesia in clinical settings: A retrospective cohort study"
+    journal: "The Kitakanto Medical Journal"
+    volume:  "75"
+    number:  "2"
+    pages:   "117-123"
+    year:    "2025"
+
+  - author:  "Hikaru Hoshino"
     title:   "Gradient-based co-design of nonlinear optimal regulators with stability guarantee"
     journal: "IEEE Control Systems Letters"
+    volume:  "9"
+    pages:   "2561-2566"
     year:    "2025"
-    note:    "accepted"
+
+  - author:  "Hikaru Hoshino, Hiroki Miyaguchi, Eiko Furutani, Tomonori Sugawara, Toshihiro Takeda, and Gotaro Shirakami"
+    title:   "Mechanism-based modeling of neuromuscular monitoring measures during general anesthesia"
+    journal: "IEEE Access"
+    volume:  "13"
+    pages:   "214655–214667"
+    year:    "2025"
 
 conferences:
-  - author: "T. Mantani, H. Hoshino, T. Kanazawa, E. Furutani"
+  - author: "Taiyo Mantani, Hikaru Hoshino, Tomonari Kanazawa, Eiko Furutani"
     title:  "Sizing of battery considering renewable energy bidding strategy with reinforcement learning"
     conf:   "2025 IEEE Power & Energy Society General Meeting"
     place:  "Austin, TX, USA"

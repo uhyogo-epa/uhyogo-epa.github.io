@@ -1,0 +1,25 @@
+year: "2026"
+
+conferences:
+  - author: "Zhuoyuan Wang, Xiyu Deng, Hikaru Hoshino, and Yorie Nakahira"
+    title:  "Online adaptive probabilistic safety certificate with language guidance"
+    conf:   "the 8th Annual Learning for Dynamics & Control Conference (L4DC)"
+    place:  "Los Angeles, CA, USA"
+    date:   "June 17-319"
+    year:   "2026"
+
+  - author: "持丸 祥摩, 星野 光, 古谷 栄光, 小島 茂, 髙 友香子, 岡庭 みゆき"
+    title:  "複合樹脂の混練および射出成形プロセスの構造方程式によるモデル化に関する一検討"
+    conf:   "2025年度計測自動制御学会関西支部・システム制御情報学会シンポジウム"
+    id:     "A2-1"
+    place:  "大阪工業大学梅田キャンパス"
+    date:   "2026年1月10日"
+    note:   "優秀発表賞"
+
+  - author: "橋本 啓嗣, 古谷 栄光, 武田敏宏, 白神豪太郎, 荻野祐一"
+    title:  "全身麻酔時の鎮静薬投与速度増減の必要性の検出のための特徴量の検討"
+    conf:   "2025年度計測自動制御学会関西支部・システム制御情報学会シンポジウム"
+    id:     "A3-1"
+    place:  "大阪工業大学梅田キャンパス"
+    date:   "2026年1月10日"
+ 
