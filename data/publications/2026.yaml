@@ -1,12 +1,35 @@
 year: "2026"
 
 conferences:
+  
+  - author: "Tomonari Kanazawa, Hikaru Hoshino, and Eiko Furutani"
+    title:  "A reinforcement learning-based transmission expansion framework considering strategic bidding in electricity markets"
+    conf:   "2026 IEEE Power & Energy Society General Meeting (PESGM)"
+    place:  "Montréal, Canada"
+    date:   "July 19-23"
+    year:   "2026"
+
+  - author: "Naoki Hashima, Hikaru Hoshino, Luis David Pabón Ospina, and Eiko Furutani"
+    title:  "Probabilistic reachability analysis of multi-scale voltage dynamics using reinforcement learning"
+    conf:   "2026 IEEE Power & Energy Society General Meeting (PESGM)"
+    place:  "Montréal, Canada"
+    date:   "July 19-23"
+    year:   "2026"  
+
   - author: "Zhuoyuan Wang, Xiyu Deng, Hikaru Hoshino, and Yorie Nakahira"
     title:  "Online adaptive probabilistic safety certificate with language guidance"
     conf:   "the 8th Annual Learning for Dynamics & Control Conference (L4DC)"
     place:  "Los Angeles, CA, USA"
-    date:   "June 17-319"
+    date:   "June 17-19"
     year:   "2026"
+
+  - author: "Hikaru Hoshino"
+    title:  "Gradient-based co-design of nonlinear optimal regulators with stability guarantee"
+    conf:   "2026 American Control Conference (ACC)"
+    place:  "New Orleans, Louisiana, USA"
+    date:   "May 26-29"
+    year:   "2026"
+
 
   - author: "持丸 祥摩, 星野 光, 古谷 栄光, 小島 茂, 髙 友香子, 岡庭 みゆき"
     title:  "複合樹脂の混練および射出成形プロセスの構造方程式によるモデル化に関する一検討"
@@ -14,7 +37,7 @@ conferences:
     id:     "A2-1"
     place:  "大阪工業大学梅田キャンパス"
     date:   "2026年1月10日"
-    note:   "優秀発表賞"
+    remark: "優秀発表賞"
 
   - author: "橋本 啓嗣, 古谷 栄光, 武田敏宏, 白神豪太郎, 荻野祐一"
     title:  "全身麻酔時の鎮静薬投与速度増減の必要性の検出のための特徴量の検討"
@@ -22,4 +45,3 @@ conferences:
     id:     "A3-1"
     place:  "大阪工業大学梅田キャンパス"
     date:   "2026年1月10日"
- 
