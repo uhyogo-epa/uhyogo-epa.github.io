@@ -5,23 +5,9 @@ studentlist:
         ename: "Hirotsugu Hashimoto"
 
   - grade: "修士2年生"
-    items:
-      - name: "石本 海斗"
-        ename: "Kaito Ishimoto"
-      - name: "岩井 克樹"
-        ename: "Katsuki Iwai"
-      - name: "上川 桜典"
-        ename: "Osuke Uekawa"
-      - name: "卜部 拓馬"
-        ename: "Takuma Urabe"
-      - name: "西村 憲二郎"
-        ename: "Kenjiro Nishimura"
-      - name: "萬谷 太陽"
-        ename: "Taiyo Mantani"
-
-
-  - grade: "修士1年生"
     items: 
+      - name:  "上川 桜典"
+        ename: "Osuke Uekawa"
       - name:  "金澤 友生"
         ename: "Tomonari Kanazawa"
       - name:  "久保 勝利"
@@ -35,23 +21,35 @@ studentlist:
       - name:  "持丸 祥摩"
         ename: "Shoma Mochimaru"
 
-
-  - grade: "学部4年生"
+  - grade: "修士1年生"
     items: 
       - name:  "内海 晃太"
         ename: "Kota Utsumi"
-      - name:  "岸 健人"
-        ename: "Kento Kishi"
       - name:  "杉原 雅俊"
         ename: "Masatoshi Sugihara"
       - name:  "田中 響誠"
         ename: "Kyosei Tanaka"
       - name:  "中川 喜輝"
         ename: "Yoshiki Nakagawa"
-      - name:  "福盛 真由"
-        ename: "Mayu Fukumori"
-      - name:  "八木 玲央斗"
-        ename: "Reoto Yagi"
-      - name:  "村井 衛"
-        ename: "Mamoru Murai"
+
+  - grade: "学部4年生"
+    items: 
+      - name:  "倉益 海翔"
+        ename: "Kaito Kuramasu"
+      - name:  "駒井 志行"
+        ename: "Komai Motoyuki"
+      - name:  "藤澤 侑斗"
+        ename: "Yuto Fujisawa"
+      - name:  "西田 絢子"
+        ename: "Ayako Nishida"
+      - name:  "西本 有里"
+        ename: "Yuri Nishimoto"
+      - name:  "宮園 竣也"
+        ename: "Shunya Miyazono"
+      - name:  "宗次 歩花"
+        ename: "Ayuka Munetsugu"
+      - name:  "森本 義也"
+        ename: "Yoshiya Morimoto"
+
+
 
