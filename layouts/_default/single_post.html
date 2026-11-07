@@ -27,9 +27,9 @@
               <div class="content-gallery-space"></div> <!-- コンテンツとの間に余白 -->
               <div class="gallery-container {{ if eq (len .) 1 }}single-image-mode{{ end }}">
                 {{ range . }}
-                  <a class="gallery-img-container" href="{{ . }}" target="_blank" rel="noopener">
+                  <div class="gallery-img-container">
                     <img src="{{ . }}" alt="" class="gallery-img" loading="lazy">
-                  </a>
+                  </div>
                 {{ end }}
               </div>
             {{ end }}
