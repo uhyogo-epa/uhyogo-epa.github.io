@@ -20,3 +20,9 @@ Gemfile.lock
 .hugo_build.lock
 
 resources/_gen/
+
+# Hugo のローカルビルド出力（本番は GitHub Actions でビルド）
+/public/
+
+# Windows からダウンロードしたファイルに付く情報
+*:Zone.Identifier

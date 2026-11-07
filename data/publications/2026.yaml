@@ -2,12 +2,27 @@ year: "2026"
 
 conferences:
   
+  - author: "Naoki Hashima, Hikaru Hoshino, and Eiko Furutani"
+    title:  "Probabilistic risk assessment of fault-induced instability in grid-forming inverter-based systems"
+    conf:   "2026 IEEE International Energy Conference (EnergyCon)"
+    place:  "Paris, France"
+    date:   "October 27-29"
+    year:   "2026"
+
+  - author: "Tomonari Kanazawa, Hikaru Hoshino, and Eiko Furutani"
+    title:  "Learning stability of replay-based co-optimization for transmission expansion under strategic bidding"
+    conf:   "2026 IEEE International Energy Conference (EnergyCon)"
+    place:  "Paris, France"
+    date:   "October 27-29"
+    year:   "2026"
+
   - author: "Tomonari Kanazawa, Hikaru Hoshino, and Eiko Furutani"
     title:  "A reinforcement learning-based transmission expansion framework considering strategic bidding in electricity markets"
     conf:   "2026 IEEE Power & Energy Society General Meeting (PESGM)"
     place:  "Montréal, Canada"
     date:   "July 19-23"
     year:   "2026"
+    remark: "Best Paper Session (Power System Operation, Planning, and Economics)"
 
   - author: "Naoki Hashima, Hikaru Hoshino, Luis David Pabón Ospina, and Eiko Furutani"
     title:  "Probabilistic reachability analysis of multi-scale voltage dynamics using reinforcement learning"
@@ -15,6 +30,7 @@ conferences:
     place:  "Montréal, Canada"
     date:   "July 19-23"
     year:   "2026"  
+    remark: "Best Paper Session (Grid Transformation)"
 
   - author: "Zhuoyuan Wang, Xiyu Deng, Hikaru Hoshino, and Yorie Nakahira"
     title:  "Online adaptive probabilistic safety certificate with language guidance"
@@ -102,4 +118,18 @@ conferences:
     place:  "ウインクあいち"
     date:   "2026年5月26日"
     remark: "チュートリアル講演"
-    
+
+  - author: "星野 光"
+    title:  "強化学習と電力系統への適用"
+    conf:   "令和8年 電気学会 電力・エネルギー部門大会"
+    id:     "座談会「電力系統へのAI最新技術適用の現状」"
+    place:  "千葉大学西千葉キャンパス"
+    date:   "2026年9月17日"
+    remark: "依頼講演"
+
+  - author: "中川 喜輝, 星野 光, 古谷 栄光"
+    title:  "燃料電池車のエネルギーマネジメントと速度制御の同時最適化に関する一検討"
+    conf:   "第69回自動制御連合講演会"
+    id:     "1C1-5"
+    place:  "東京都市大学世田谷キャンパス"
+    date:   "2026年11月7日"

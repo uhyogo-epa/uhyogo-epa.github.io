@@ -3,7 +3,7 @@
   "baseUrl": ".",
   "paths": {
    "*": [
-    "..\\themes\\up-business-theme-rev\\assets\\*"
+    "../themes/up-business-theme-rev/assets/*"
    ]
   }
  }

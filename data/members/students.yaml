@@ -4,6 +4,10 @@ studentlist:
       - name:  "橋本 啓嗣"
         ename: "Hirotsugu Hashimoto"
 
+  - grade: "研究生"
+    items: 
+      - name:  "Miguel Antonio Pisani Orta"
+
   - grade: "修士2年生"
     items: 
       - name:  "上川 桜典"

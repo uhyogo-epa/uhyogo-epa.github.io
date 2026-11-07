@@ -1,6 +1,7 @@
 baseURL: "https://uhyogo-epa.github.io"
 theme: "up-business-theme-rev"
 languageCode: "ja"
+timeZone: "Asia/Tokyo"
 
 title: "電力応用工学G"
 
