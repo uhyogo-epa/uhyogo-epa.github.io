@@ -28,15 +28,29 @@
                    {{end}}
                   </ol>
               {{ end }}
-              {{ with .conferences }}
-                  <p class="pt-2 mb-0">学会発表</p>
+              {{/* 学会発表を国際会議と国内学会に分ける.
+                   type: "international" / "domestic" があればそれに従い,
+                   なければ会議名(conf)に日本語(漢字・かな)が含まれるかで判定する. */}}
+              {{ $intl := slice }}
+              {{ $dom := slice }}
+              {{ range partial "pub_sort_by_date.html" (dict "items" .conferences "fileYear" .year) }}
+                {{ $isDom := gt (len (findRE `[\p{Han}\p{Hiragana}\p{Katakana}]` (.conf | default ""))) 0 }}
+                {{ with .type }}{{ $isDom = eq . "domestic" }}{{ end }}
+                {{ if $isDom }}{{ $dom = $dom | append . }}{{ else }}{{ $intl = $intl | append . }}{{ end }}
+              {{ end }}
+              {{ with $intl }}
+                  <p class="pt-2 mb-0">国際会議</p>
                   <ol class="mb-0">
-                   {{ range . }} 
-                      <li> {{ with .author}}{{.}},{{end}} {{with .title}}{{.}},{{end}} {{with .conf}}{{.}}, {{end}}{{with .pages}}pp. {{.}}, {{end}}{{with .id}}{{.}}, {{end}}{{with .place}}{{.}}, {{end}}{{with .date}}{{.}}{{end}}{{with .year}} ({{.}}){{end}}.{{with .note}} ({{.}}){{end}}{{with .remark}}<b> {{.}}</b>{{end}}
-                   {{end}}
+                   {{ range . }}{{ partial "pub_conference_item.html" . }}{{ end }}
                   </ol>
               {{ end }}
-              {{ with .misc }}
+              {{ with $dom }}
+                  <p class="pt-2 mb-0">国内学会</p>
+                  <ol class="mb-0">
+                   {{ range . }}{{ partial "pub_conference_item.html" . }}{{ end }}
+                  </ol>
+              {{ end }}
+              {{ with partial "pub_sort_by_date.html" (dict "items" .misc "fileYear" .year) }}
                   <p class="pt-2 mb-0">その他</p>
                   <ol class="mb-0">
                    {{ range . }} 

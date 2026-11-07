@@ -2,12 +2,6 @@ year: "2025"
 
 papers:
 
-  - author:  "Taiyo Mantani, Hikaru Hoshino, and Eiko Furutani"
-    title:   "Optimal battery sizing for real-time renewable energy bidding based on reinforcement learning"
-    journal: "IEEE Transactions on Energy Markets, Policy and Regulation"
-    year:    "2025"
-    note:    "in press"
-
   - author:  "Toshihiro Takeda, Yuichi Ogino, Shino Kani, Eiko Furutani, Takehiko Asaga, and
 Gotaro Shirakami"
     title:   "Effects of aging on the maintenance dose of remimazolam anesthesia in clinical settings: A retrospective cohort study"

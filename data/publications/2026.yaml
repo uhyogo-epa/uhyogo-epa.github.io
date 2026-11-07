@@ -1,5 +1,15 @@
 year: "2026"
 
+papers:
+
+  - author:  "Taiyo Mantani, Hikaru Hoshino, and Eiko Furutani"
+    title:   "Optimal battery sizing for real-time renewable energy bidding based on reinforcement learning"
+    journal: "IEEE Transactions on Energy Markets, Policy and Regulation"
+    volume:  "4"
+    number:  "2"
+    pages:   "247-258"
+    year:    "2026"
+
 conferences:
   
   - author: "Naoki Hashima, Hikaru Hoshino, and Eiko Furutani"
@@ -45,6 +55,7 @@ conferences:
     place:  "New Orleans, Louisiana, USA"
     date:   "May 26-29"
     year:   "2026"
+    note:   "Presentation of the IEEE Control Systems Letters paper"
 
 
   - author: "持丸 祥摩, 星野 光, 古谷 栄光, 小島 茂, 髙 友香子, 岡庭 みゆき"

@@ -1,0 +1,28 @@
+{{/*
+  研究成果のリストを開催日の古い順に並べて返す.
+  date の書式: "2026年5月24日" / "July 19-23" (年は year か, ファイルの年 .fileYear).
+  日付が読めない項目は年の末尾扱い. 同じ日付はデータの記載順を保つ.
+  使い方: partial "pub_sort_by_date.html" (dict "items" .conferences "fileYear" .year)
+*/}}
+{{- $months := dict "january" 1 "february" 2 "march" 3 "april" 4 "may" 5 "june" 6 "july" 7 "august" 8 "september" 9 "october" 10 "november" 11 "december" 12 -}}
+{{- $keyed := slice -}}
+{{- range $i, $it := .items -}}
+  {{- $y := $it.year | default $.fileYear | int -}}
+  {{- $m := 13 -}}
+  {{- $d := 0 -}}
+  {{- $date := $it.date | default "" -}}
+  {{- with findRESubmatch `^(\d+)年(\d+)月(\d+)日` $date 1 -}}
+    {{- $y = index (index . 0) 1 | int -}}
+    {{- $m = index (index . 0) 2 | int -}}
+    {{- $d = index (index . 0) 3 | int -}}
+  {{- else -}}
+    {{- with findRESubmatch `^([A-Za-z]+)\s+(\d+)` $date 1 -}}
+      {{- with index $months (lower (index (index . 0) 1)) -}}{{- $m = . -}}{{- end -}}
+      {{- $d = index (index . 0) 2 | int -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $keyed = $keyed | append (dict "k" (printf "%04d%02d%02d-%04d" $y $m $d $i) "v" $it) -}}
+{{- end -}}
+{{- $out := slice -}}
+{{- range sort $keyed "k" "asc" -}}{{- $out = $out | append .v -}}{{- end -}}
+{{- return $out -}}
