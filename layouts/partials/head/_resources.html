@@ -1,0 +1,16 @@
+<!-- Load Shared SCSS (theme) -->
+{{- $sharedSCSS := resources.Get "scss/shared/shared.scss" -}}
+{{- $sharedSCSS := $sharedSCSS | css.Sass (dict "outputStyle" "compressed" "includePaths" (slice "assets")) -}}
+{{- $sharedSCSS := $sharedSCSS | resources.ExecuteAsTemplate "main.scss" . -}}
+
+<!-- Load Shared JS (theme) -->
+{{- $sharedJS := resources.Get "js/shared/shared.js" -}}
+{{- $sharedJS := $sharedJS | js.Build (dict "minify" "true") -}}
+
+<style type="text/css" media="all">{{ $sharedSCSS.Content | safeCSS }}</style>
+<script>{{- $sharedJS.Content | safeJS -}}</script>
+
+
+<!-- サイト全体のスタイル（テーマの上書き） -->
+{{- $site := resources.Get "css/site.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}">

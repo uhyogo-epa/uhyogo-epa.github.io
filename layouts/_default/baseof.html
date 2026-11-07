@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default "ja" }}">
+  {{ partial "head/head.html" . }}
+  <body>
+    {{- partial "shared/header.html" . -}}
+    {{- block "main" . -}}{{- end -}}
+    {{- partial "shared/footer.html" . -}}
+  </body>
+</html>

@@ -1,5 +1,13 @@
 firstview: 
+  # style: "modern" で HTML/CSS 版, 行を消す(またはコメントアウト)と従来の画像 fv.png に戻る
+  style: "modern"
   image: "images/fv.png"
+  tags: ["医療制御システム", "電力エネルギーシステム", "数理モデル化", "制御・最適化"]
+  tiles:
+    - image: "images/fv/campus.jpg"
+    - image: "images/fv/medical.jpg"
+    - image: "images/fv/energy.jpg"
+    - image: "images/fv/code.jpg"
 
 about: 
   content: "兵庫県立大学電力応用工学研究グループでは，医療制御システムや電力エネルギーシステムなど様々な対象の数理モデル化や制御・最適化に関する研究を行っています．"

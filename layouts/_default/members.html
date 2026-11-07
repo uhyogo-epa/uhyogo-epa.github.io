@@ -2,82 +2,64 @@
 
 <section class="section pt-5">
   <div class="container">
-    <div class="row justify-content-center pb-0">
-      <div class="col-12 col-xl-6">
-          <h2 class="fs-1 fw-bold text-center text-primary pb-0">研究室メンバー</h2>
-      </div>
+    <div class="page-head">
+      <p class="page-eyebrow">Members</p>
+      <h2 class="page-title">研究室メンバー</h2>
     </div>
   </div>
 </section>
-
 
 <!-- スタッフ -->
 {{ with .Site.Data.members.staffs }}
-<section class="section pt-3">
-  <div class="container">
-    <div class="row justify-content-center">
+<section class="section">
+  <div class="container narrow">
     {{ range .stafflist }}
-      {{ with .position }}
-        <h3 class="fs-1 fw-bold text-center text-primary pt-5 pb-1">{{ . }}</h3>
-      {{ end }}
-      {{ range .items }}
-      <div class="row flex-xl-row-reverse align-items-start pt-3">
-        <div class="col-12 col-xl-7 pt-1 pb-3 ms-3">
-          <h4 class="text-primary pb-3"> {{ .name }}  {{ with .ename }} / {{ . }} {{ end }}</h4>
-          {{ range .buttons }}
-            <a class="btn btn-outline-primary px-4" href="{{ .url }}" >{{ .label }}</a>
-          {{ end }}
+      <div class="member-group">
+        {{ with .position }}<h3 class="member-grade">{{ . }}</h3>{{ end }}
+        {{ range .items }}
+        <div class="staff-card">
+          <div class="staff-photo-wrap">
+            {{ with .image }}{{ with resources.Get . }}
+              {{ $img := .Fill "320x320 Center q85" }}
+              <img src="{{ $img.RelPermalink }}" alt="" class="staff-photo">
+            {{ end }}{{ end }}
+          </div>
+          <div class="staff-body">
+            <p class="staff-name">{{ .name }}</p>
+            {{ with .ename }}<p class="staff-ename">{{ . }}</p>{{ end }}
+            <div class="staff-links">
+              {{ range .buttons }}
+                <a class="btn btn-outline-primary btn-sm" href="{{ .url }}">{{ .label }}</a>
+              {{ end }}
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-xl-3 text-center" style="margin-left: auto;">
-          {{ with .image }}
-            {{ with resources.Get . }} 
-              <img src="{{ .Permalink }}" alt="" class="staff-photo">
-            {{ end }}
-          {{ end }}
-        </div>
+        {{ end }}
       </div>
-      {{ end }}
     {{ end }}
-    </div>
   </div>
 </section>
 {{ end }}
-
 
 <!-- 学生 -->
 {{ with .Site.Data.members.students }}
-<section class="section pt-5">
-  <div class="container">
-    <div class="row justify-content-center pb-5">
+<section class="section pb-5">
+  <div class="container narrow">
     {{ range .studentlist }}
-      {{ with .grade }}
-        <h3 class="fs-1 fw-bold text-center text-primary pt-4 pb-2">{{ . }}</h3>
-      {{ end }}
-      {{ range .items }}
-       <div class="col-12 col-xl-12">
-         <div class="text-center">
-            <h4 class="text-center text-primary pb-1"> {{ .name }} {{ with .ename }} / {{ . }} {{ end }} </h4>
-         </div>
-       </div>
-      {{ end }}
+      <div class="member-group">
+        {{ with .grade }}<h3 class="member-grade">{{ . }}</h3>{{ end }}
+        <ul class="member-list">
+          {{ range .items }}
+            <li>
+              <span class="member-name">{{ .name }}</span>
+              {{ with .ename }}<span class="member-ename">{{ . }}</span>{{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      </div>
     {{ end }}
-    </div>
   </div>
 </section>
 {{ end }}
 
-
-<style>
-  /* スタッフ写真 */
-  .staff-photo {
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 15px;
-  }
-</style>
-
 {{ end }}
-
-
-
-

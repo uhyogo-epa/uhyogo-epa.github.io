@@ -1,6 +1,9 @@
 {{ define "main" }}
 
 {{ with .Site.Data.toppage.firstview }}
+{{ if eq .style "modern" }}
+  {{ partial "fv_modern.html" . }}
+{{ else }}
   {{ $imgXL := resources.Get .image | fingerprint }}
   {{ $imgSM := resources.Get .image | fingerprint }}
 
@@ -9,13 +12,17 @@
     data-bg-sm="{{ $imgSM.RelPermalink }}">
   </div>
 {{ end }}
+{{ end }}
 
 {{ with .Site.Data.toppage.about }}
 <section class="section py-5">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-xl-8">
-        <h3 class="fs-1 fw-bold text-center text-primary pb-3"> About </h3>
+        <div class="page-head">
+          <p class="page-eyebrow">About</p>
+          <h2 class="page-title">研究室について</h2>
+        </div>
         <p class="text-center text-black-61 text-xl-start pb-3">{{ .content }}</p>
       </div>
     </div>

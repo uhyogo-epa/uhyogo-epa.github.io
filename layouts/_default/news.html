@@ -1,11 +1,10 @@
 {{ define "main" }}
   <section class="section blog-list py-5">
     <div class="container">
-      <div class="row justify-content-center pb-5">
-        <div class="col-12 col-xl-6">
-          {{ with .Title }}
-            <h2 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
-          {{ end }}
+      <div class="page-head">
+        <div>
+          <p class="page-eyebrow">News</p>
+          <h2 class="page-title">ニュース</h2>
           {{ with .Params.description }}
             <p class="text-black-61 text-center pb-3">{{ . }}</p>
           {{ end }}
@@ -14,7 +13,7 @@
       <div class="row g-4 pb-5">
         {{ range (.Paginate .RegularPagesRecursive).Pages }}
         <div class="col-12 col-md-6 col-lg-4">
-          <a class="card text-decoration-none h-100" href="{{ .Permalink }}">
+          <a class="card news-card text-decoration-none h-100" href="{{ .Permalink }}">
             <div class="aspect-ratio-62-5">
                {{- $img := .Resources.GetMatch (.Params.featured_img | default "cover.jpg") -}}
                {{- if $img -}}
@@ -26,7 +25,8 @@
                {{- end -}}
              </div>
             <div class="card-body">
-              <h5 class="card-title fw-semibold">{{with .Params.date}}{{. | time.Format "2006/01/02"}}{{end}} {{ .Title }}</h5>
+              {{ with .Params.date }}<p class="news-date">{{ . | time.Format "2006.01.02" }}</p>{{ end }}
+              <h5 class="card-title">{{ .Title }}</h5>
               <p class="card-text text-black-61">{{ .Summary | plainify }}</p>
             </div>
           </a>
